@@ -53,3 +53,7 @@ new_variable = "my birthday"
 print(new_variable, type(new_variable))
 
 
+username = input("Please tell me your name ")
+result = f"Hello {username}, nice to meet you!
+print(result)
+
