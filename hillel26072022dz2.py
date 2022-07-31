@@ -1,5 +1,3 @@
-print("hello world")
-
 result = 1 + 1  # testing
 print(result)
 print("Result", result)
@@ -53,3 +51,5 @@ print(new_variable, type(new_variable))
 
 new_variable = "my birthday"
 print(new_variable, type(new_variable))
+
+
