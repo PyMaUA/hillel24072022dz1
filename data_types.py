@@ -54,6 +54,6 @@ print(new_variable, type(new_variable))
 
 
 username = input("Please tell me your name ")
-result = f"Hello {username}, nice to meet you!
+result = f"Hello {username}, nice to meet you!"
 print(result)
 
