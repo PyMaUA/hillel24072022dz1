@@ -1,6 +1,6 @@
-username = input("Please tell me your name ")
-result = f"Hello {username}, nice to meet you!"
-print(result)
+# username = input("Please tell me your name ")
+# result = f"Hello {username}, nice to meet you!"
+# print(result)
 
 value_1 = int(10.89)
 print(value_1, type(value_1))

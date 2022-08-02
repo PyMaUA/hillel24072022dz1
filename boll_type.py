@@ -27,4 +27,10 @@ print(f"{is_true_4=}")
 is_true_5 = not True or (True or False)
 print(f"{is_true_5=}")
 
-#
+# comparison_bool
+
+comparison_result: bool = bool (None) < bool(7)
+print(comparison_result)
+
+comparison_result_1: bool = bool ("") < bool (10 - 1)
+print(comparison_result_1)
