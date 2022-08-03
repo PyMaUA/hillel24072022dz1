@@ -1,6 +1,6 @@
-# username = input("Please tell me your name ")
-# result = f"Hello {username}, nice to meet you!"
-# print(result)
+username = input("Please tell me your name ")
+result = f"Hello {username}, nice to meet you"
+print(result)
 
 value_1 = int(10.89)
 print(value_1, type(value_1))
@@ -26,5 +26,14 @@ print(square_root, type(square_root))
 division_remainder = value_1 % 2
 print(division_remainder, type(division_remainder))
 
-value_4 = input("10.89")
+value_4 = int(value_1)
 print(value_4, type(value_4))
+
+exponentiation_1 = value_4 ** 4
+print(exponentiation, type(exponentiation))
+
+square_root_1 = value_4 ** 0.5
+print(square_root, type(square_root))
+
+division_remainder_1 = value_4 % 2
+print(division_remainder, type(division_remainder))
