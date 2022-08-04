@@ -11,6 +11,11 @@ value_true = True
 comparison_result: bool = 5 == 5
 print(comparison_result)
 
+x=5
+y=x
+is_ident = x is y
+print(is_ident)
+
 # or, and, not
 is_true_1 = True or (True and False)
 print(f"{is_true_1=}")
