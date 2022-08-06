@@ -11,8 +11,8 @@ value_true = True
 comparison_result: bool = 5 == 5
 print(comparison_result)
 
-x=5
-y=x
+x = 5
+y = x
 is_ident = x is y
 print(is_ident)
 
@@ -34,8 +34,21 @@ print(f"{is_true_5=}")
 
 # comparison_bool
 
-comparison_result: bool = bool (None) < bool(7)
+comparison_result: bool = bool(None) < bool(7)
 print(comparison_result)
 
-comparison_result_1: bool = bool ("") < bool (10 - 1)
+comparison_result_1: bool = bool("") < bool(10 - 1)
 print(comparison_result_1)
+
+one_space_str = bool("Hello") or bool("True or False")
+print(f"{one_space_str=}")
+
+none_obj = None
+print(type(none_obj), none_obj)
+variable = type(none_obj)
+
+x = None
+y = x
+is_ident = x is y
+print(is_ident)
+print(id(x), id(y))
