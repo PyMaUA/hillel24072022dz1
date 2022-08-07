@@ -1,14 +1,14 @@
-username = " wiLLiAm "
-new_string = f"my name {username}"
+username = input("Please tell me your name ")
 
-print("give me first capital", new_string.capitalize())
+str_for_slice = " maSHa "
+print("slice between 1 and 6 --> ", str_for_slice[1:6])
+new_string = f"{str_for_slice[1:6]}"
+print(new_string)
 
-print("length of string", len(new_string))
+print(new_string.capitalize())
+print(f"Hello, {(new_string.capitalize())}!")
 
-print("swap the case", new_string.replace("2", "ssdaf"))
+print("length of name --> ", len(new_string))
 
-print("give me first capital", new_string.capitalize())
-
-print("swap the case", new_string.swapcase())
-print("swap the case", new_string.title())
-
+new_string_slice = (new_string.capitalize())
+print("reversed name --> ", new_string_slice[::-1])
