@@ -2,8 +2,10 @@ num_1 = input("Please enter a value ")
 num_2 = input("Please enter a value ")
 action = input("Please enter an arithmetic operation ")
 
-print("number order num_1 --> ", len(num_1))
-print("number order num_2 --> ", len(num_2))
+value = num_1
+print("number order num_1 --> ", len(str(num_1).split(".")[0]))
+value = num_2
+print("number order num_1 --> ", len(str(num_2).split(".")[0]))
 
 if "." in num_1:
     num_1 = float(num_1)
