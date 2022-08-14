@@ -5,55 +5,44 @@ action = input("Please enter an arithmetic operation ")
 print("number order num_1 --> ", len(num_1))
 print("number order num_2 --> ", len(num_2))
 
-match action:
-    case "+":
-        print("OK")
-    case "-":
-        print("OK")
-    case "*":
-        print("OK")
-    case "/":
-        print("OK")
-    case "**":
-        print("OK")
-    case _:
-        print("Sorry, the action was entered incorrectly...")
-
-try:
-    num_1 = int(num_1)
-except ValueError:
+if "." in num_1:
     num_1 = float(num_1)
+else:
+    num_1 = int(num_1)
 print(f"{num_1}", type(num_1))
 
-try:
-    num_2 = int(num_2)
-except ValueError:
+if "." in num_2:
     num_2 = float(num_2)
+else:
+    num_2 = int(num_2)
 print(f"{num_2}", type(num_2))
-
 
 if action == "+":
     result = num_1 + num_2
     print(f"{result}", type(result))
 
-if action == "-":
+elif action == "-":
     result = num_1 - num_2
     print(f"{result}", type(result))
 
-if action == "*":
+elif action == "*":
     result = num_1 * num_2
     print(f"{result}", type(result))
 
-if action == "/":
+elif action == "/":
     try:
         result = num_1 / num_2
         print(f"{result}", type(result))
     except ZeroDivisionError:
         print("You can't dividing on zero")
 
-if action == "**":
+elif action == "**":
     result = num_1 ** num_2
     print(f"{result}", type(result))
+
+else:
+    print("Sorry, the action was entered incorrectly...")
+
 
 if num_1 >= num_2:
     result = num_1 >= num_2
