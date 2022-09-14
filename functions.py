@@ -27,12 +27,12 @@ def happy_time(seconds):
     result_seconds = seconds % DAY % HOUR % MINUTE
 
     print(
-        f"{result_days=}, "
-        f"{result_hours=}, "
-        f"{result_minutes=}, "
-        f"{result_seconds=}, "
+        f"{result_days=} : "
+        f"{result_hours=} : "
+        f"{result_minutes=} : "
+        f"{result_seconds=} "
     )
-    return (result_days, result_hours, result_minutes , result_seconds)
+    return (result_days, result_hours, result_minutes, result_seconds)
 
 seconds = 10000
 print(f"happy_time=", happy_time(seconds))
